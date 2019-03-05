@@ -5,6 +5,7 @@ import {
   View,
   StyleSheet,
   TouchableWithoutFeedback,
+  StatusBar
 } from 'react-native';
 import { MaterialCommunityIcons, Ionicons, Feather } from '@expo/vector-icons';
 
@@ -18,7 +19,6 @@ class Toolbar extends PureComponent {
 
     return (
       <View style={styles.container}>
-        <View style={styles.statusBar} />
         <TouchableWithoutFeedback onPress={onBackPress}>
           <Animated.View style={animationStyle}>
             <Row style={styles.toolbarContainer}>
@@ -38,7 +38,9 @@ class Toolbar extends PureComponent {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.statusBar} />
+        <View style={styles.statusBar}>
+          <StatusBar barStyle='dark-content'/>
+        </View>
         <View>
           <Row style={styles.toolbarContainer}>
             <View style={styles.titleContainer}>

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Text, View, StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import { Text, View, StyleSheet, TouchableWithoutFeedback, StatusBar } from 'react-native';
 import { MaterialCommunityIcons, Ionicons, Feather } from '@expo/vector-icons';
 
 import { Row } from '../../components';
@@ -11,7 +11,9 @@ class Toolbar extends PureComponent {
 
     return (
       <View style={styles.container}>
-        <View style={styles.statusBar} />
+        <View style={styles.statusBar}>
+          <StatusBar barStyle='light-content'/>
+        </View>
         <TouchableWithoutFeedback onPress={onBackPress}>
           <View>
             <Row style={styles.toolbarContainer}>
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
   },
   statusBar: {
     height: 24,
-    backgroundColor: 'white',
+    backgroundColor: '#008dff',
   },
   titleBackText: {
     color: 'white',
