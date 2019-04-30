@@ -1,7 +1,8 @@
 {
+  "name": "Attendance List",
   "expo": {
-    "name": "ui-interactions",
-    "slug": "ui-interactions",
+    "name": "attendance-list",
+    "slug": "attendance-list",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [

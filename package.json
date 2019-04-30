@@ -10,10 +10,21 @@
     "expo": "^32.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-native-motion": "^1.0.1"
+    "react-native-action-button": "^2.8.5",
+    "react-native-elements": "^1.1.0",
+    "react-native-iconic": "0.0.9",
+    "react-native-motion": "^1.0.1",
+    "react-native-navigation": "^2.17.0",
+    "react-native-storage": "^1.0.0",
+    "react-navigation": "^3.6.1"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "@types/expo__vector-icons": "^9.0.1",
+    "@types/react": "^16.8.6",
+    "@types/react-native": "^0.57.38",
+    "babel-preset-expo": "^5.0.0",
+    "react-native-typescript-transformer": "^1.2.12",
+    "typescript": "^3.3.3333"
   },
   "private": true
 }
